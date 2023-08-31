@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+  height: 100vh;
+  font-family: 'Ubuntu', sans-serif;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.split-left{
+  left: 0;
+  position: relative; 
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  transition: flex 1s ease-in-out;
+  color: white;
+  background-color: rgba(102, 102, 236, 0.12);
+}
+
+.split-left:before{
+  content: '';
+  background-image: url('https://blog.es.playstation.com/tachyon/sites/14/2023/03/15245fa3668500ccc88e9387646dc4da2401d63e.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+
+.split-right{
+  right: 0;
+  position: relative; 
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  transition: flex 1s ease-in-out;
+  color: white;
+}
+
+.split-right:before{
+  content: '';
+  background-image: url('https://www.smartworld.it/wp-content/uploads/2019/12/Xbox-Series-X-Final-HD-1280x720.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+.hover-left{
+  flex: 4;
+  transition: flex 1s ease-in-out;
+}
+
+.hover-right{
+  flex: 4;
+  transition: flex 1s ease-in-out;
+}
+
+.btn-ps, .btn-xbox{
+  border: none;
+  outline: none;
+  padding: 20px 40px;
+  cursor: pointer;
+  border: 2px solid white;
+  border-radius: 20px;
+  font-size: 24px;
+  background: transparent;
+  color: rgb(255, 255, 255);
+  margin: 10px;
+  transition: all 0.3s ease;
+}
+
+
+.btn-ps:hover{
+  background-color: #7262ff;
+  border-color: #7262ff;
+}
+
+.btn-xbox:hover{
+  background-color: #8eff62;
+  border-color: #8eff62;
+}
+
+h1{
+  font-size: 4rem;
+}
