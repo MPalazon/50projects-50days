@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+  overflow-x: hidden;
+  background-color: #333;
+  gap: 32px;
+}
+
+h1{
+  color: white; 
+}
+
+.box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 200px;
+  color: white;
+  background: #8864ec;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(145, 145, 145, 0.2);
+  transform: translateX(400%);
+  transition: transform 0.5s ease;
+}
+
+.box:nth-of-type(even) {
+  transform: translateX(-400%);
+}
+
+.box.show{
+  transform: translateX(0%);
+}
