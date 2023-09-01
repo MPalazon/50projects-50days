@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  height: 100vh;
+  font-family: 'Muli', sans-serif;
+  overflow: hidden;
+  background-color: #1A1F2B;
+}
+
+.all{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.container{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  padding: 20px 40px;
+  background-color: wheat;
+  font-size: 24px;
+  margin: 40px;
+  min-width: 200px;
+}
+
+span{
+  position: absolute;
+  top: -40px;
+  color: rgb(190, 190, 190);
+}
