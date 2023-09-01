@@ -22,8 +22,7 @@ body{
   height: 100%;
 }
 
-.split-left{
-  left: 0;
+.split-left, .split-right{
   position: relative; 
   height: 100vh;
   width: 100%;
@@ -37,9 +36,16 @@ body{
   background-color: rgba(102, 102, 236, 0.12);
 }
 
-.split-left:before{
+.split-left{
+  left: 0;
+}
+
+.split-right{
+  right: 0;
+}
+
+.split-left:before , .split-right:before{
   content: '';
-  background-image: url('https://blog.es.playstation.com/tachyon/sites/14/2023/03/15245fa3668500ccc88e9387646dc4da2401d63e.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -52,42 +58,16 @@ body{
   z-index: -1;
 }
 
-
-.split-right{
-  right: 0;
-  position: relative; 
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  flex: 1;
-  transition: flex 1s ease-in-out;
-  color: white;
+.split-left:before{
+  background-image: url('https://blog.es.playstation.com/tachyon/sites/14/2023/03/15245fa3668500ccc88e9387646dc4da2401d63e.png');
 }
 
 .split-right:before{
-  content: '';
   background-image: url('https://www.smartworld.it/wp-content/uploads/2019/12/Xbox-Series-X-Final-HD-1280x720.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  opacity: 0.3;
-  z-index: -1;
 }
 
-.hover-left{
-  flex: 4;
-  transition: flex 1s ease-in-out;
-}
 
-.hover-right{
+.hover-left, .hover-right{
   flex: 4;
   transition: flex 1s ease-in-out;
 }
