@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  height: 100vh;
+  font-family: 'Ubuntu', sans-serif;
+  overflow: hidden;
+  background-color: #1A1F2B;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.btn{
+  border: none;
+  width: 200px;
+  padding: 20px 40px;
+  border-radius: 5px;
+  background-color: #647592;
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
+}
