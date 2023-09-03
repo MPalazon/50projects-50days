@@ -19,9 +19,9 @@ h1{
 }
 
 .faq{
+  position: relative;
   display: block;
-  width: 100%;
-  max-width: 800px;
+  width: 800px;
   margin: 10px auto;
   padding: 20px;
   background: linear-gradient(90deg, rgba(255,123,146,1) 0%, rgba(255,64,129,1) 37%, rgba(255,122,122,1) 100%);
@@ -37,4 +37,22 @@ h1{
 
 .faq-answer.active{
   display: block;
+}
+
+button{
+  position: absolute;
+  cursor: pointer;
+  right: 80px;
+  top: 40px;
+  background: none;
+  border: none;
+  color: white;
+}
+
+button.open{
+  transform: rotate(180deg);
+}
+
+svg{
+  stroke-width: 5;
 }
