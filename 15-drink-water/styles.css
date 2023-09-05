@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1A1A1A;
+  font-family: 'Muli', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container-goal, .cup{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+h1, h3{
+  margin: 0;
+  color: white;
+}
+
+.container-tanks{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.cups{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 280px;
+}
+
+p{
+  color: white;
+}
+
+.bigCup{
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: transparent;
+  border: 3px solid #b085ff;
+  width: 200px;
+  height: 330px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  font-size: 20px;
+  color: #b085ff;
+  margin: 4px 4px;
+  text-align: center;
+}
+
+.cup{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.percentage {
+  background-color: #b085ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 30px;
+  height: 0;
+  color: white;
+  transition: 0.3s ease;
+}
+
+.cups {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  color: white;
+}
+
+.cup.cup-small {
+  border: 3px solid #b085ff;
+  height: 95px;
+  width: 50px;
+  border-radius: 0 0 15px 15px;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 14px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 5px;
+}
+
+
+.cup-small.active{
+  background-color: #b085ff;
+  border: 3px solid #b085ff;
+  color: white;
+  transition: all 0.3s ease;
+}
