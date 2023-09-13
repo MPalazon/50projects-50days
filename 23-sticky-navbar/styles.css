@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Muli', sans-serif;
+  height: 100vh;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.navbar{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #222;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar.active{
+  background-color: #fff;
+  color: #222;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.nav-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar.active .nav-container{
+  padding: 10px 50px;
+}
+
+ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.3s;
+  color: currentColor;
+}
+
+a.current{
+  color: #f44336;
+}
+
+a:hover{
+  color: #f44336;
+}
+
+.hero{
+  position: relative;
+  background-image: url('https://images.pexels.com/photos/450035/pexels-photo-450035.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  z-index: -2;
+}
+
+
+.hero::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.hero-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  padding: 0px 50px;
+  flex-direction: column;
+  color: white;
+}
+
+
+.hero-container p{
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+section{
+  background-color: #fff;
+  margin: 0;
+  padding: 20px;
+}
+
+section p{
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  color: #555;
+  line-height: 30px;
+  letter-spacing: 1.2px;
+}
+
+section h2{
+  font-size: 32px;
+  margin: 0;
+  padding: 0;
+  color: #222;
+  margin-bottom: 20px;
+}
